@@ -20,7 +20,7 @@ export const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link style={{ textDecoration: "none" }} to="/E-Commerce">
             Shop
           </Link>
           {menu === "shop" ? <hr /> : null}
@@ -30,7 +30,7 @@ export const Navbar = () => {
             setMenu("mens");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/mens">
+          <Link style={{ textDecoration: "none" }} to="E-Commerce/mens">
             Men
           </Link>
           {menu === "mens" ? <hr /> : null}
@@ -40,7 +40,7 @@ export const Navbar = () => {
             setMenu("womens");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/womens">
+          <Link style={{ textDecoration: "none" }} to="E-Commerce/womens">
             Women
           </Link>
           {menu === "womens" ? <hr /> : null}
@@ -50,17 +50,17 @@ export const Navbar = () => {
             setMenu("kids");
           }}
         >
-          <Link style={{ textDecoration: "none" }} to="/kids">
+          <Link style={{ textDecoration: "none" }} to="E-Commerce/kids">
             Kid
           </Link>
           {menu === "kids" ? <hr /> : null}
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link to="/login">
+        <Link to="E-Commerce/login">
           <button>Login</button>
         </Link>
-        <Link to="/cart">
+        <Link to="E-Commerce/cart">
           <img src={cart_icon} alt="" />
         </Link>
 
